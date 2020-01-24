@@ -23,28 +23,46 @@
 <body>
 
   <!-- navbar -->
-  <nav class="navbar py-4 navbar-expand-lg ftco_navbar navbar-light bg-light flex-row">
+  <nav class="navbar fixed-top py-4 navbar-expand-lg navbar-light bg-light">
     <div class="container">
-      <div class="row no-gutters d-flex align-items-start align-items-center px-3 px-md-0">
-        <div class="col-lg-2 pr-4 align-items-center">
-          <a class="navbar-brand tx-home" href="index.html">Child<span>Hospital</span></a>
-        </div>
-        <div class="col-lg-10 d-none d-md-block">
-          <div class="row d-flex">
-            <div class="col-md-4 pr-4 d-flex topper align-items-center">
-              <div class="icon bg-white mr-2 d-flex justify-content-center align-items-center"><i class="fas fa-map"></i></div>
-              <span class="text">Address: 198 West 21th Street, Suite 721 New York NY 10016</span>
+      <a class="navbar-brand tx-home" href="index.html">Child<span>Hospital</span></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <!-- <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li> -->
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#test">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#stores">Deparments</a>
+          </li> -->
+          <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
             </div>
-            <div class="col-md pr-4 d-flex topper align-items-center">
-              <div class="icon bg-white mr-2 d-flex justify-content-center align-items-center"><i class="fas fa-paper-plane"></i></div>
-              <span class="text">Email: youremail@email.com</span>
-            </div>
-            <div class="col-md pr-4 d-flex topper align-items-center">
-              <div class="icon bg-white mr-2 d-flex justify-content-center align-items-center"><i class="fas fa-phone-alt"></i></div>
-              <span class="text">Phone: + 1235 2355 98</span>
-            </div>
-          </div>
-        </div>
+          </li> -->
+          <!-- <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="About.html">About</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
       </div>
     </div>
   </nav>
