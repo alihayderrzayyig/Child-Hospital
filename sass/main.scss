@@ -605,6 +605,13 @@ a {
 			}
 		
 		}
+		.img-midia {
+			img{
+				display: block;
+				width: 80%;
+				margin-bottom: 1rem;
+			}
+		}
 
 	}
 	p {
@@ -1087,17 +1094,18 @@ $color-dark: #000;
 	.about-card {
 		// position: relative;
 		background-image: 
-		linear-gradient(104deg, rgba($color-white,.8) 0%,rgba($color-white,.8) 50%,transparent 50%) ,url(../../img/nat-10.jpg);
+		linear-gradient(100deg, rgba($light-primary,.8) 0%,rgba($dark-primary,.8) 60%,transparent 40%) ,url(../../img/nat-10.jpg);
 		background-size: 100%;  
 		background-size: cover;
 		box-shadow: 0 2rem 4rem rgba($color-dark, 0.2);
 		height: 40rem;
 		// display: none;
-		opacity: 0.8;
+		opacity: 0.9;
 		.about-text {
 			// position: absolute;
 			// top: 0;
 			// left: 0;
+			color: $bg-body;
 			width: 50%;
 			height: 100%;
 			@include padding-y(1rem);
@@ -1107,24 +1115,52 @@ $color-dark: #000;
 			// background: red;
 			transform: translateY(0%);
 			position: relative;
-			h3{
+			div{
 				position: absolute;
-				font-size: 2rem;		
-				// width: 80%;
-				top: 20%;
-				right:  0;
-				// transform: translate(-50%,-50%);
-
-			}
-			p{
-				position: absolute;
-				font-size: 1.3rem;		
-				width: 80%;
 				top: 50%;
 				left: 50%;
-				transform: translate(-50%,-50%);
-
+				width: 80%;
+				transform: translate(-50% ,-50%);
+				h3{
+					// position: absolute;
+					font-size: 2rem;		
+					// // width: 80%;
+					margin-right: -1rem;
+					margin-bottom: 1rem;
+					font-weight: 600;
+					// top: 20%;
+					// right:  0;
+					// transform: translate(-50%,-50%);
+	
+				}
+				p{
+					// position: absolute;
+					font-size: 1.3rem;	
+					font-weight: 600;	
+					// width: 80%;
+					// top: 50%;
+					// left: 50%;
+					// transform: translate(-50%,-50%);
+				}
 			}
+			// h3{
+			// 	position: absolute;
+			// 	font-size: 2rem;		
+			// 	// width: 80%;
+			// 	top: 20%;
+			// 	right:  0;
+			// 	// transform: translate(-50%,-50%);
+
+			// }
+			// p{
+			// 	position: absolute;
+			// 	font-size: 1.3rem;		
+			// 	width: 80%;
+			// 	top: 50%;
+			// 	left: 50%;
+			// 	transform: translate(-50%,-50%);
+
+			// }
 		}
 	}
 	.bg-video {
@@ -1144,18 +1180,18 @@ $color-dark: #000;
 		}
 	
 	}
-	.bg-video2 {
-		position: absolute;
-		top: 0;
-		left: 0;
-		height: 100%;
-		width: 100%;
-		z-index: -1;
-		background-color: $dark-primary;
-		opacity: .15;
-		overflow: hidden;
-		// display: none;
-	}
+	// .bg-video2 {
+	// 	position: absolute;
+	// 	top: 0;
+	// 	left: 0;
+	// 	height: 100%;
+	// 	width: 100%;
+	// 	z-index: -1;
+	// 	background-color: $dark-primary;
+	// 	opacity: .15;
+	// 	overflow: hidden;
+	// 	// display: none;
+	// }
 }
 
 @media (max-width: 1024px) { 
@@ -1168,6 +1204,23 @@ $color-dark: #000;
 	// #home-slider{
 	// 	height: 50vh;
 	// }
+	#about {
+		padding: 5rem;
+		.about-card {
+			background-image: linear-gradient(to right bottom, rgba($light-primary,.8),rgba($dark-primary,.8)) ,url(../../img/nat-10.jpg);
+			.about-text {
+				width: 100%;
+				div{
+					h3{		
+
+					}
+					p{
+
+					}
+				}
+			}
+		}
+	}
 
 	#test {
 		padding: 0;
@@ -1255,10 +1308,12 @@ $color-dark: #000;
 	
  }
 
+
 @media (max-width: 720px) { 
 	// #home-slider{
 	// 	height: 30vh;
 	// }
+	
 
 	#float {
 		.container {

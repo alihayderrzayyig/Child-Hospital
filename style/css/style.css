@@ -7298,6 +7298,10 @@ a {
         left: 50%;
         font-size: 1.5rem;
         transform: translate(-50%, -50%); }
+    .ftco-footer .ftco-footer-widget .img-midia img {
+      display: block;
+      width: 80%;
+      margin-bottom: 1rem; }
   .ftco-footer p {
     color: rgba(236, 240, 241, 0.7); }
   .ftco-footer a {
@@ -7663,13 +7667,14 @@ a {
   position: relative;
   padding: 8rem 0rem; }
   #about .about-card {
-    background-image: linear-gradient(104deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 50%, transparent 50%), url(../../img/nat-10.jpg);
+    background-image: linear-gradient(100deg, rgba(35, 241, 180, 0.8) 0%, rgba(27, 146, 122, 0.8) 60%, transparent 40%), url(../../img/nat-10.jpg);
     background-size: 100%;
     background-size: cover;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
     height: 40rem;
-    opacity: 0.8; }
+    opacity: 0.9; }
     #about .about-card .about-text {
+      color: #f0f0f0;
       width: 50%;
       height: 100%;
       padding-left: 1rem !important;
@@ -7679,18 +7684,20 @@ a {
       text-align: -webkit-right;
       transform: translateY(0%);
       position: relative; }
-      #about .about-card .about-text h3 {
+      #about .about-card .about-text div {
         position: absolute;
-        font-size: 2rem;
-        top: 20%;
-        right: 0; }
-      #about .about-card .about-text p {
-        position: absolute;
-        font-size: 1.3rem;
-        width: 80%;
         top: 50%;
         left: 50%;
+        width: 80%;
         transform: translate(-50%, -50%); }
+        #about .about-card .about-text div h3 {
+          font-size: 2rem;
+          margin-right: -1rem;
+          margin-bottom: 1rem;
+          font-weight: 600; }
+        #about .about-card .about-text div p {
+          font-size: 1.3rem;
+          font-weight: 600; }
   #about .bg-video {
     position: absolute;
     top: 0;
@@ -7704,18 +7711,14 @@ a {
       width: 100%;
       height: 100%;
       object-fit: cover; }
-  #about .bg-video2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    background-color: #1b927a;
-    opacity: .15;
-    overflow: hidden; }
 
 @media (max-width: 991.98px) {
+  #about {
+    padding: 5rem; }
+    #about .about-card {
+      background-image: linear-gradient(to right bottom, rgba(35, 241, 180, 0.8), rgba(27, 146, 122, 0.8)), url(../../img/nat-10.jpg); }
+      #about .about-card .about-text {
+        width: 100%; }
   #test {
     padding: 0; }
     #test .container {
